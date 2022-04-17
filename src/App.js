@@ -25,6 +25,7 @@ function App() {
             <Square />
           </div>
         </div>
+        <button className='btn'> Clear </button>
       </header>
     </div>
   );

@@ -11,11 +11,16 @@
   font-size: calc(10px + 5vmin);
   color: rgb(119, 145, 218);
 }
+.btn{
+  margin: 30px;
+  font-size: medium;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
 .Board{
   height : 60vh;
   width: 60vh;
-  background-color: red;
+  /* background-color: red; */
   align-items: center;
 }
 
@@ -25,10 +30,10 @@
 }
 
 .bottom, .bottom-right{
-  border-bottom: 6px solid blue;
+  border-bottom: 4px solid rgb(222, 222, 243);
 }
 .right, .bottom-right{
-  border-right: 6px solid blue;
+  border-right: 4px solid rgb(222, 222, 243);;
 }
 
 .Value{
