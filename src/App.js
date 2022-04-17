@@ -1,20 +1,30 @@
 import './App.css';
 import { Square } from './Square';
-import { useState } from 'react';
-
-const initialArr = ['', '', '', '', '', '', '', '', '']
+import { useState, useEffect } from 'react';
 function App() {
+  const initialArr = ['', '', '', '', '', '', '', '', '']
   const [initialState, updateInitialState] = useState(initialArr);
   const [isXmove, updateXMove] = useState(true) //initial value to be X
+
   const clearBoard = () => {
     updateInitialState(initialArr);
   }
   const updateMoves = (index) => {
     const arr = initialState;
-    arr[index] = isXmove ? 'X' : 'O'
-    updateInitialState(arr);
-    updateXMove(!isXmove);
+
+    // not to overwrite the values
+    if (arr[index] === '') {
+      arr[index] = isXmove ? 'X' : 'O'
+      updateInitialState(arr);
+      updateXMove(!isXmove);
+    }
+
   }
+  useEffect(() => {
+    //check winner
+
+  }, [initialState])
+
   return (
     <div className="App">
       <header className="App-header">

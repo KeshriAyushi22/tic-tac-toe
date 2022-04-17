@@ -27,18 +27,20 @@
 }
 
 .Square{
+  cursor: pointer;
   height : 20vh;
   width: 20vh;
 }
 
 .bottom, .bottom-right{
-  border-bottom: 4px solid rgb(222, 222, 243);
+  border-bottom: 4px solid rgb(182, 182, 216);
 }
 .right, .bottom-right{
-  border-right: 4px solid rgb(222, 222, 243);;
+  border-right: 4px solid rgb(182, 182, 216);
 }
 
 .Value{
+  cursor: pointer;
   align-items: center;
   font-size: 80px;
 }
