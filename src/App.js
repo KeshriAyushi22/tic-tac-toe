@@ -10,18 +10,18 @@ function App() {
         </p>
         <div className='Board'>
           <div style={{ display: 'flex' }}>
-            <Square />
-            <Square />
-            <Square />
+            <Square border='bottom-right' />
+            <Square border='bottom-right' />
+            <Square border='bottom' />
           </div>
           <div style={{ display: 'flex' }}>
-            <Square />
-            <Square />
-            <Square />
+            <Square border='bottom-right' />
+            <Square border='bottom-right' />
+            <Square border='bottom' />
           </div>
           <div style={{ display: 'flex' }}>
-            <Square />
-            <Square />
+            <Square border='right' />
+            <Square border='right' />
             <Square />
           </div>
         </div>

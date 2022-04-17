@@ -1,8 +1,8 @@
 import './App.css';
 
-export function Square() {
+export function Square(props) {
     return (
-        <div className='Square'>
+        <div className={`Square ${props.border}`}>
             <div className='Value'>X</div>
         </div>)
 }
