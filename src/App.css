@@ -12,6 +12,8 @@
   color: rgb(119, 145, 218);
 }
 .btn{
+  cursor: pointer;
+  pointer-events: auto;
   margin: 30px;
   font-size: medium;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -41,9 +43,9 @@
   font-size: 80px;
 }
 
-.ValueX{
+.X{
   color: rgb(231, 131, 60);
 }
-.ValueO{
+.O{
   color: rgb(203, 231, 60);
 }
